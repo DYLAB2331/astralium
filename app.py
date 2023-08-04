@@ -26,6 +26,10 @@ def iss_tracker():
 
     return render_template('iss_tracker.html', message=message, static_map_url=static_map_url)
 
+@app.route('/climate_change')
+def climate_change():
+    return render_template('climate_change.html')
+
 
 
 if __name__ == '__main__':
