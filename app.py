@@ -30,6 +30,9 @@ def iss_tracker():
 def climate_change():
     return render_template('climate_change.html')
 
+@app.route('/apod')
+def apod():
+    return render_template('apod.html')
 
 
 if __name__ == '__main__':

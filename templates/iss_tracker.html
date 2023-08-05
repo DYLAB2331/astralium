@@ -13,17 +13,25 @@
         <img id="logo" src="/static/AstraliumLogoV1.png" alt="Logo">
     </div>
 
-    <div id="navbar-container">
+    <header>
         <nav>
-            <a href="/">Home</a> | 
-            <a href="/iss_tracker">ISS Tracker</a> |
-            <a href="/climate_change">Climate Change</a> |
-            <a href="/photo_of_the_day">Photo of the Day</a>
+            <ul class="nav_links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/iss_tracker">ISS TRACKER</a></li>
+                <li><a href="/climate_change">CLIMATE HEAT MAP</a></li> 
+                <li><a href="/apod">PHOTO OF THE DAY</a></li>
+            </ul>
         </nav>       
-    </div>
+    <header>
     
-    <h1>{{ message }}</h1>
-    <img src="{{ static_map_url }}" alt="Map showing current position of the ISS">
+    <div class="message-container">
+        <h1>{{ message }}</h1>
+    </div>
+
+    <div class="map-container">
+        <img src="{{ static_map_url }}" alt="Map showing current position of the ISS">
+    </div>
+
 </body>
 </html>
 

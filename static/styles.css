@@ -1,3 +1,7 @@
+body {
+    height: 125vh;
+}
+
 #logo-container {
     text-align: center;
 }
@@ -7,6 +11,45 @@
     height: auto;
 }
 
-#navbar-container {
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Helvetica', sans-serif;
+
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav_links li {
+    margin: 0 20px;
+}
+
+.nav_links a {
+    color: lightgrey;
+}
+
+.nav_links a:hover {
+    color: #fff;  
+    transition: color 0.3s ease;  
+}
+
+.message-container {
+    text-align: center;
+}
+
+.map-container {
     text-align: center;
 }
