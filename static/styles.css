@@ -2,11 +2,11 @@ body {
     height: 125vh;
 }
 
-#logo-container {
+.logo-container {
     text-align: center;
 }
 
-#logo {
+.logo {
     width: 500px;
     height: auto;
 }
@@ -22,7 +22,7 @@ nav {
     margin-top: -20px;
 }
 
-.nav_links {
+.nav-container {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -33,15 +33,15 @@ nav {
     border-radius: 5px;
 }
 
-.nav_links li {
+.nav-container li {
     margin: 0 20px;
 }
 
-.nav_links a {
+.nav-container a {
     color: lightgrey;
 }
 
-.nav_links a:hover {
+.nav-container a:hover {
     color: #fff;  
     transition: color 0.3s ease;  
 }
@@ -51,5 +51,9 @@ nav {
 }
 
 .map-container {
+    text-align: center;
+}
+
+.apod-container {
     text-align: center;
 }

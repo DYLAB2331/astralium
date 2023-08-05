@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import requests
 import json
-import time
 
 def get_iss_data():
     response = requests.get("http://api.open-notify.org/iss-now.json")
