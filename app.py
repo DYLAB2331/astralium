@@ -25,7 +25,7 @@ def iss_tracker():
 
     static_map_url = get_static_map_url(iss_latitude, iss_longitude)
 
-    return render_template('iss_tracker.html', message=message, static_map_url=static_map_url)
+    return render_template('iss_tracker.html', message=message, static_map_url=static_map_url, iss_latitude=iss_latitude, iss_longitude=iss_longitude)
 
 @app.route('/climate_change')
 def climate_change():
