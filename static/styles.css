@@ -93,6 +93,23 @@ nav {
     text-align: center;
 }
 
+.iss-description {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+}
+
+.iss-description h1 {
+    font-weight: bold;
+}
+
+.iss-description h3 {
+    font-weight: 400;
+    width: 500px;
+}
+
 .apod-container {
     text-align: center;
 }
