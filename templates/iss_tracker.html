@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');</style>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
     <title>ISS Tracker</title>  
     <script src="/static/map.js"></script>
 </head>
-<body>
-    <div class="logo-container">
-        <img class="logo" src="/static/AstraliumLogoV1.png" alt="Logo">
-    </div>
+<body class="iss-tracker">
+    <nav>
+        <div>
+            <img class="logo" src="/static/astronaut.png" alt="Logo">
+        </div>
 
-    <header>
-        <nav>
-            <ul class="nav-container">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/iss_tracker">ISS TRACKER</a></li>
-                <li><a href="/climate_change">CLIMATE HEAT MAP</a></li> 
-                <li><a href="/apod">PHOTO OF THE DAY</a></li>
-            </ul>
-        </nav>       
-    <header>
+        <div class="logo-text">
+            <h1>ASTRALIUM</h1>
+            <h3>Our Galaxy & Beyond</h3>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/iss_tracker">ISS TRACKER</a></li>
+            <li><a href="/climate_change">CLIMATE HEAT MAP</a></li> 
+            <li><a href="/apod">PHOTO OF THE DAY</a></li>
+        </ul>
+    </nav>
     
     <div class="message-container">
         <h1>{{ message }}</h1>
