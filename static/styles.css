@@ -1,5 +1,5 @@
 body {
-    height: 125vh;
+    height: 150vh;
     font-family: 'Helvetica', sans-serif;
     margin: 0px;
 }
@@ -8,20 +8,13 @@ a {
     text-decoration: none;
 }
 
-.home {
-    background-image: url(space.jpg);
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
 nav {
-    background-color: rgba(0,0,0,0.75); 
+    background-color: rgba(0,0,0,0.4); 
     display: flex; 
     align-items: center;
     padding-top: 20px;
     padding-bottom: 15px;
-}  
+} 
 
 .logo {
     width: auto; 
@@ -68,13 +61,32 @@ nav {
 .nav-links a:hover {
     color: lightgray; /* Color on hover */
 }
-  
+
+.home {
+    background-image: url(space.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.iss-tracker {
+    background-image: url(iss.jpg);
+    background-size: 100% 50%; 
+    background-repeat: no-repeat;
+    background-position: 0 -15%;
+} 
 
 .message-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    position: absolute;
+    top: 825px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .map-container {
