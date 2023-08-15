@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from iss_tracker import *
 from apod import *
+from datetime import date
 import requests
 import json
 import time
@@ -33,8 +34,10 @@ def climate_change():
 
 @app.route('/apod')
 def apod():
+    currDate = date.today()
+
     apod_data = get_apod()
-    return render_template('apod.html', apod_data=apod_data)
+    return render_template('apod.html', apod_data=apod_data, currDate=currDate)
 
 
 if __name__ == '__main__':

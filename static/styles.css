@@ -1,3 +1,8 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 body {
     height: 150vh;
     font-family: 'Helvetica', sans-serif;
@@ -9,7 +14,6 @@ a {
 }
 
 nav {
-    background-color: rgba(0,0,0,0.4); 
     display: flex; 
     align-items: center;
     padding-top: 20px;
@@ -42,29 +46,29 @@ nav {
 }
   
 .nav-links {
-    list-style-type: none; /* Remove bullets */
-    display: flex; /* Align items horizontally */
-    margin-left: auto; /* Push links to the right */
+    list-style-type: none; 
+    display: flex; 
+    margin-left: auto; 
 }
   
 .nav-links li {
-    margin: 0 20px; /* Adjust spacing between links */
+    margin: 0 20px; 
 }
   
 .nav-links a {
-    color: #fff; /* White text */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
   
 .nav-links a:hover {
-    color: lightgray; /* Color on hover */
+    color: lightgray; 
 }
 
 .home {
     background-image: url(space.jpg);
-    background-size: contain; 
+    background-size: 100% 75%; 
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -75,6 +79,13 @@ nav {
     background-repeat: no-repeat;
     background-position: 0 -15%;
 } 
+
+.apod {
+    background-image: url(apod.jpg);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 
 .message-container {
     display: flex;
@@ -103,6 +114,8 @@ nav {
 
 .iss-description h1 {
     font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .iss-description h3 {
@@ -111,5 +124,15 @@ nav {
 }
 
 .apod-container {
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 860px;
+}
+
+.apod-container p {
+    width: 1000px;
+    margin: 20px auto;
     text-align: center;
 }
+
