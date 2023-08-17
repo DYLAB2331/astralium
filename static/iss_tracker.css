@@ -1,0 +1,42 @@
+.iss-tracker {
+    background-image: url(iss.jpg);
+    background-size: 100% 50%; 
+    background-repeat: no-repeat;
+    background-position: 0 -15%;
+} 
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    position: absolute;
+    top: 825px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.map-container {
+    text-align: center;
+}
+
+.iss-description {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+}
+
+.iss-description h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.iss-description h3 {
+    font-weight: 400;
+    width: 500px;
+}

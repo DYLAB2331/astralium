@@ -1,0 +1,115 @@
+.climate-change {
+    background-image: url(climate.mp4);
+    background-size: 100% 50%; 
+    background-repeat: no-repeat;
+    background-position: 0 -15%;
+    height: 100vh;
+}
+
+.climate-background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.climate-change-heading {
+    font-weight: 600;
+    font-size: 75px;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.climate-change-subheadings h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.climate-change-subheadings .carbon-dioxide-heading {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: orange;
+}
+
+.climate-change-subheadings .global-temperature-heading {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: coral;
+}
+
+.climate-change-subheadings .sea-level-heading {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    color: lightskyblue;
+}
+
+.climate-stats h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.climate-stats .carbon-dioxide-stat {
+    position: absolute;
+    top: 32.5%;
+    left: 10%;
+}
+
+.climate-stats .global-temperature-stat {
+    position: absolute;
+    top: 32.5%;
+    left: 35%;
+}
+
+.climate-stats .sea-level-stat {
+    position: absolute;
+    top: 32.5%;
+    left: 65%;
+}
+
+.climate-stats h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.climate-stats .carbon-dioxide-stat2 {
+    position: absolute;
+    top: 470px;
+    left: 17.5%;
+    width: 100px;
+}
+
+.climate-stats .global-temperature-stat2 {
+    position: absolute;
+    top: 470px;
+    left: 40.5%;
+    width: 150px;
+}
+
+.climate-stats .sea-level-stat2 {
+    position: absolute;
+    top: 470px;
+    left: 70%;
+    width: 100px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .climate-background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .climate-background-video {
+        width: auto;
+        height: 100%;
+    }
+}
