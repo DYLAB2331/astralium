@@ -12,43 +12,54 @@
     <script src="/static/map.js"></script>
 </head>
 <body class="iss-tracker">
-    <nav>
-        <div>
-            <img class="logo" src="/static/astronaut.png" alt="Logo">
-        </div>
+    <video autoplay muted loop plays-inline class="iss-background-video">
+        <source src="/static/iss.mp4" type="video/mp4">
+    </video>
 
-        <div class="logo-text">
-            <h1>ASTRALIUM</h1>
-            <h3>Our Galaxy & Beyond</h3>
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="/static/astronaut.png" alt="Logo">
+            </div>
+    
+            <div class="logo-text">
+                <h1>ASTRALIUM</h1>
+                <h2>Our Galaxy & Beyond</h2>
+            </div>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/iss_tracker">ISS TRACKER</a></li>
-            <li><a href="/climate_change">CLIMATE CHANGE</a></li> 
-            <li><a href="/apod">PHOTO OF THE DAY</a></li>
-        </ul>
+    
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/iss_tracker">ISS TRACKER</a></li>
+                <li><a href="/climate_change">CLIMATE CHANGE</a></li> 
+                <li><a href="/apod">PHOTO OF THE DAY</a></li>
+            </ul>
+        </div>
     </nav>
     
-    <div class="message-container">
-        <h1>{{ message }}</h1>
+    <div class="iss-content-container">
+        <!-- <div class="message-container">
+            <h1>{{ message }}</h1>
+        </div> -->
+    
+        <div class="map-container">
+            <div id="map" style="width: 60%; height: 75%; margin: 0 auto; position: absolute; top: 20%; right: 5%;"></div>
+        </div>
+    
+        <script>
+            window.onload = function() {
+                initMap({{ iss_longitude }}, {{ iss_latitude }});
+            };
+        </script>
     </div>
-
-    <div class="map-container">
-        <div id="map" style="width: 75%; height: 750px; margin: 0 auto; position: absolute; top: 900px; left: 12.5%;"></div>
-    </div>
-
-    <script>
-        window.onload = function() {
-            initMap({{ iss_longitude }}, {{ iss_latitude }});
-        };
-    </script>
 
     <div class="iss-description">
         <h1>The ISS</h1>
-        <h3>The International Space Station serves as a habitable research laboratory in low-Earth orbit.
-            It has fostered international cooperation and scientific research for decades.</h3>
+        <h2>The International Space Station serves as a habitable research laboratory in low-Earth orbit.
+            It has fostered international cooperation and scientific research for decades.</h2>
     </div>
+
 </body>
 </html>
 

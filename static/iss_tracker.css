@@ -1,42 +1,45 @@
 .iss-tracker {
-    background-image: url(iss.jpg);
+    background-image: url(iss.mp4);
     background-size: 100% 50%; 
     background-repeat: no-repeat;
     background-position: 0 -15%;
-} 
-
-.message-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    position: absolute;
-    top: 825px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 95vh;
 }
 
-.map-container {
-    text-align: center;
+.iss-background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .iss-description {
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    left: 50px;
-    top: 250px;
+    position: relative;
+    top: 15%;
+    left: 5%;
 }
 
 .iss-description h1 {
-    font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
 }
 
-.iss-description h3 {
+.iss-description h2 {
+    font-size: 1.25rem;
     font-weight: 400;
-    width: 500px;
+    width: 400px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .iss-background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .iss-background-video {
+        width: auto;
+        height: 100%;
+    }
 }

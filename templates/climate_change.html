@@ -10,27 +10,30 @@
 </head>
 <body class="climate-change">
     <div>
-
         <video autoplay muted loop plays-inline class="climate-background-video">
             <source src="/static/climate.mp4" type="video/mp4">
         </video>
 
-        <nav>
-            <div>
-                <img class="logo" src="/static/astronaut.png" alt="Logo">
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="/static/astronaut.png" alt="Logo">
+                </div>
+        
+                <div class="logo-text">
+                    <h1>ASTRALIUM</h1>
+                    <h2>Our Galaxy & Beyond</h2>
+                </div>
             </div>
     
-            <div class="logo-text">
-                <h1>ASTRALIUM</h1>
-                <h3>Our Galaxy & Beyond</h3>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/iss_tracker">ISS TRACKER</a></li>
+                    <li><a href="/climate_change">CLIMATE CHANGE</a></li> 
+                    <li><a href="/apod">PHOTO OF THE DAY</a></li>
+                </ul>
             </div>
-    
-            <ul class="nav-links">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/iss_tracker">ISS TRACKER</a></li>
-                <li><a href="/climate_change">CLIMATE CHANGE</a></li> 
-                <li><a href="/apod">PHOTO OF THE DAY</a></li>
-            </ul>
         </nav>
 
         <h1 class="climate-change-heading">A Glance at the Planet's Vital Signs</h1>
@@ -50,7 +53,6 @@
             <h3 class="global-temperature-stat2">&#176C since preindustrial times</h3>
             <h3 class="sea-level-stat2">inches since January 1993</h3>
         </div>
-
     </div>
 </body>
 </html>

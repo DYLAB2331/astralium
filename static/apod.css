@@ -1,15 +1,12 @@
 .apod {
-    background-image: url(apod.jpg);
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-    background-position: top;
+    height: 125vh;
 }
 
 .apod-container {
     color: black;
     text-align: center;
     position: relative;
-    top: 860px;
+    top: 10%;
 }
 
 .apod-container p {
